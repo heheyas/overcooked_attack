@@ -1,0 +1,4 @@
+__pycache__/
+sacred/
+log/
+wandb/

@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-176-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.11",
+    "heartbeatAt": "2022-05-10T13:41:49.259792",
+    "startedAt": "2022-05-10T13:41:46.347727",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 2,
+    "cpu_count": 48,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "host": "dell",
+    "username": "czl",
+    "executable": "/opt/czl/anaconda3/envs/harl_modified/bin/python"
+}

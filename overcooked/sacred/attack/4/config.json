@@ -1,0 +1,192 @@
+{
+  "bc_schedule": [
+    [
+      0,
+      0
+    ],
+    [
+      Infinity,
+      0
+    ]
+  ],
+  "bootstrapped": true,
+  "clip_range": 0.05,
+  "deterministic": false,
+  "device": "cuda:0",
+  "ent_coef": 0.01,
+  "env_config": {
+    "env_params": {
+      "horizon": 400
+    },
+    "mdp_params": {
+      "layout_name": "cramped_room",
+      "rew_shaping_params": {
+        "DISH_DISP_DISTANCE_REW": 0,
+        "DISH_PICKUP_REWARD": 3,
+        "PLACEMENT_IN_POT_REW": 3,
+        "POT_DISTANCE_REW": 0,
+        "SOUP_DISTANCE_REW": 0,
+        "SOUP_PICKUP_REWARD": 5
+      }
+    },
+    "multi_agent_params": {
+      "bc_schedule": [
+        [
+          0,
+          0
+        ],
+        [
+          Infinity,
+          0
+        ]
+      ],
+      "reward_shaping_factor": 1.0,
+      "reward_shaping_horizon": 2500000,
+      "use_phi": false
+    }
+  },
+  "gae_lambda": 0.98,
+  "gamma": 0.99,
+  "hidden_size": 32,
+  "horizon": 400,
+  "layout_name": "cramped_room",
+  "log_interval": 1,
+  "lr": 0.001,
+  "lr_schedule_kwargs": null,
+  "max_grad_norm": 0.1,
+  "mini_batch_size": 400,
+  "n_epochs": 8,
+  "num_mini_batch": 6,
+  "other_agent": "sp",
+  "params": {
+    "bootstrapped": true,
+    "clip_range": 0.05,
+    "deterministic": false,
+    "device": {
+      "py/reduce": [
+        {
+          "py/type": "torch.device"
+        },
+        {
+          "py/tuple": [
+            "cuda",
+            0
+          ]
+        }
+      ]
+    },
+    "ent_coef": 0.01,
+    "env_config": {
+      "env_params": {
+        "horizon": 400
+      },
+      "mdp_params": {
+        "layout_name": "cramped_room",
+        "rew_shaping_params": {
+          "DISH_DISP_DISTANCE_REW": 0,
+          "DISH_PICKUP_REWARD": 3,
+          "PLACEMENT_IN_POT_REW": 3,
+          "POT_DISTANCE_REW": 0,
+          "SOUP_DISTANCE_REW": 0,
+          "SOUP_PICKUP_REWARD": 5
+        }
+      },
+      "multi_agent_params": {
+        "bc_schedule": [
+          [
+            0,
+            0
+          ],
+          [
+            Infinity,
+            0
+          ]
+        ],
+        "reward_shaping_factor": 1.0,
+        "reward_shaping_horizon": 2500000,
+        "use_phi": false
+      }
+    },
+    "eps": 1e-08,
+    "gae_lambda": 0.98,
+    "gamma": 0.99,
+    "hidden_size": 32,
+    "layout_name": "cramped_room",
+    "log_interval": 1,
+    "lr": 0.001,
+    "lr_schedule_kwargs": null,
+    "max_grad_norm": 0.1,
+    "mini_batch_size": 400,
+    "n_epochs": 8,
+    "num_mini_batch": 6,
+    "other_agent": "sp",
+    "reward_shaping_horizon": 2500000,
+    "reward_shaping_kwargs": {
+      "end": 2500000,
+      "start": 0,
+      "threshold": 0
+    },
+    "run_type": "ppo",
+    "save_dir": {
+      "py/id": 3
+    },
+    "save_interval": 5,
+    "seed": 100,
+    "sim_threads": 30,
+    "tb_log_name": "cramped_room_",
+    "tensorboard_log": "./log/sp/",
+    "total_batch_size": 12000,
+    "total_timesteps": 10000000.0,
+    "trained_ac_path": "/opt/czl/self/new_overcooked_apag/saved_models/sp/cramped_room/policy.pt",
+    "use_compat": false,
+    "use_gae": true,
+    "use_rnn": true,
+    "verbose": 0,
+    "vf_coef": 0.05
+  },
+  "rew_shaping_params": {
+    "DISH_DISP_DISTANCE_REW": 0,
+    "DISH_PICKUP_REWARD": 3,
+    "PLACEMENT_IN_POT_REW": 3,
+    "POT_DISTANCE_REW": 0,
+    "SOUP_DISTANCE_REW": 0,
+    "SOUP_PICKUP_REWARD": 5
+  },
+  "reward_shaping_factor": 1.0,
+  "reward_shaping_horizon": 2500000,
+  "reward_shaping_kwargs": {
+    "end": 2500000,
+    "start": 0,
+    "threshold": 0
+  },
+  "run_type": "ppo",
+  "save_dir": {
+    "py/reduce": [
+      {
+        "py/type": "pathlib.PosixPath"
+      },
+      {
+        "py/tuple": [
+          "..",
+          "saved_models",
+          "sp_recurr",
+          "cramped_room"
+        ]
+      }
+    ]
+  },
+  "save_interval": 5,
+  "seed": 100,
+  "sim_threads": 30,
+  "tb_log_name": "cramped_room_",
+  "tensorboard_log": "./log/sp/",
+  "total_batch_size": 12000,
+  "total_timesteps": 10000000.0,
+  "trained_ac_path": "/opt/czl/self/new_overcooked_apag/saved_models/sp/cramped_room/policy.pt",
+  "use_compat": false,
+  "use_gae": true,
+  "use_phi": false,
+  "use_rnn": true,
+  "verbose": 0,
+  "vf_coef": 0.05
+}

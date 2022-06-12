@@ -1,0 +1,109 @@
+{
+  "artifacts": [],
+  "command": "run",
+  "experiment": {
+    "base_dir": "/opt/czl/self/attack",
+    "dependencies": [
+      "a2c-ppo-acktr==0.0.1",
+      "munch==2.5.0",
+      "numpy==1.18.5",
+      "sacred==0.8.2",
+      "scikit-learn==1.0.2",
+      "stable-baselines3==1.4.1a0",
+      "torch==1.11.0",
+      "wandb==0.12.12"
+    ],
+    "mainfile": "main.py",
+    "name": "attack",
+    "repositories": [],
+    "sources": [
+      [
+        "PPO/Trainer.py",
+        "_sources/Trainer_f20a9d2fb6a1cbc24bf1aabf9a523b96.py"
+      ],
+      [
+        "PPO/model.py",
+        "_sources/model_17cb8c17814db2cde7aa2018d3d7c67d.py"
+      ],
+      [
+        "envior/env.py",
+        "_sources/env_fd1a39947972b6ccff0d4a490aed889d.py"
+      ],
+      [
+        "envior/env_utils.py",
+        "_sources/env_utils_3943814f2fc728183fc5be7a6ba489be.py"
+      ],
+      [
+        "main.py",
+        "_sources/main_e0eb312566caf6e03f255e6ca21951a5.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/opt/czl/anaconda3/envs/harl_modified/lib/python3.7/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"main.py\", line 206, in run\n    trainer = AdvTrainer(params)\n",
+    "  File \"/opt/czl/self/attack/PPO/Trainer.py\", line 83, in __init__\n    self.other_actor_critic = load_ac_from_file(params[\"trained_ac_path\"])\n",
+    "  File \"/opt/czl/self/attack/PPO/utils.py\", line 6, in load_ac_from_file\n    return th.load(params[\"ac_file_path\"])\n",
+    "TypeError: string indices must be integers\n"
+  ],
+  "heartbeat": "2022-05-10T13:42:42.347939",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Silver 4214 CPU @ 2.20GHz",
+    "gpus": {
+      "driver_version": "470.103.01",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 3090",
+          "persistence_mode": false,
+          "total_memory": 24268
+        },
+        {
+          "model": "NVIDIA GeForce RTX 3090",
+          "persistence_mode": false,
+          "total_memory": 24268
+        }
+      ]
+    },
+    "hostname": "dell",
+    "os": [
+      "Linux",
+      "Linux-4.15.0-176-generic-x86_64-with-debian-buster-sid"
+    ],
+    "python_version": "3.7.11"
+  },
+  "meta": {
+    "command": "run",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2022-05-10T13:42:29.108948",
+  "status": "FAILED",
+  "stop_time": "2022-05-10T13:42:42.349540"
+}

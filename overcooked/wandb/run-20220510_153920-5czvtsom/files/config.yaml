@@ -1,0 +1,159 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.12
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.11
+    start_time: 1652197160
+    t:
+      1:
+      - 1
+      - 3
+      - 5
+      - 52
+      - 53
+      - 55
+      3:
+      - 13
+      - 15
+      - 16
+      - 35
+      4: 3.7.11
+      5: 0.12.12
+      8:
+      - 5
+bootstrapped:
+  desc: null
+  value: true
+clip_range:
+  desc: null
+  value: 0.05
+deterministic:
+  desc: null
+  value: false
+device:
+  desc: null
+  value: cuda:0
+ent_coef:
+  desc: null
+  value: 0.01
+env_config:
+  desc: null
+  value:
+    env_params:
+      horizon: 400
+    mdp_params:
+      layout_name: cramped_room
+      rew_shaping_params:
+        DISH_DISP_DISTANCE_REW: 0
+        DISH_PICKUP_REWARD: 3
+        PLACEMENT_IN_POT_REW: 3
+        POT_DISTANCE_REW: 0
+        SOUP_DISTANCE_REW: 0
+        SOUP_PICKUP_REWARD: 5
+    multi_agent_params:
+      bc_schedule:
+      - - 0
+        - 0
+      - - .inf
+        - 0
+      reward_shaping_factor: 1.0
+      reward_shaping_horizon: 2500000
+      use_phi: false
+eps:
+  desc: null
+  value: 1.0e-08
+gae_lambda:
+  desc: null
+  value: 0.98
+gamma:
+  desc: null
+  value: 0.99
+hidden_size:
+  desc: null
+  value: 32
+layout_name:
+  desc: null
+  value: cramped_room
+log_interval:
+  desc: null
+  value: 1
+lr:
+  desc: null
+  value: 0.001
+lr_schedule_kwargs:
+  desc: null
+  value: null
+max_grad_norm:
+  desc: null
+  value: 0.1
+mini_batch_size:
+  desc: null
+  value: 400
+n_epochs:
+  desc: null
+  value: 8
+num_mini_batch:
+  desc: null
+  value: 6
+other_agent:
+  desc: null
+  value: sp
+reward_shaping_horizon:
+  desc: null
+  value: 2500000
+reward_shaping_kwargs:
+  desc: null
+  value:
+    end: 2500000
+    start: 0
+    threshold: 0
+run_type:
+  desc: null
+  value: ppo
+save_dir:
+  desc: null
+  value: ../saved_models/sp/cramped_room
+save_interval:
+  desc: null
+  value: 5
+seed:
+  desc: null
+  value: 100
+sim_threads:
+  desc: null
+  value: 30
+tb_log_name:
+  desc: null
+  value: cramped_room_
+tensorboard_log:
+  desc: null
+  value: ./log/sp/
+total_batch_size:
+  desc: null
+  value: 12000
+total_timesteps:
+  desc: null
+  value: 10000000.0
+trained_ac_path:
+  desc: null
+  value: /opt/czl/self/new_overcooked_apag/saved_models/sp/cramped_room/policy.pt
+use_compat:
+  desc: null
+  value: false
+use_gae:
+  desc: null
+  value: true
+use_rnn:
+  desc: null
+  value: false
+verbose:
+  desc: null
+  value: 0
+vf_coef:
+  desc: null
+  value: 0.05

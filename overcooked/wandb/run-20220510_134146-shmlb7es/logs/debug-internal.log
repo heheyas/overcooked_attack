@@ -1,0 +1,31 @@
+2022-05-10 13:41:47,259 INFO    MainThread:8887 [internal.py:wandb_internal():95] W&B internal server running at pid: 8887, started at: 2022-05-10 13:41:47.258929
+2022-05-10 13:41:47,262 INFO    WriterThread:8887 [datastore.py:open_for_write():77] open: /opt/czl/self/attack/wandb/run-20220510_134146-shmlb7es/run-shmlb7es.wandb
+2022-05-10 13:41:47,266 DEBUG   SenderThread:8887 [sender.py:send():235] send: header
+2022-05-10 13:41:47,266 DEBUG   SenderThread:8887 [sender.py:send():235] send: run
+2022-05-10 13:41:47,853 DEBUG   HandlerThread:8887 [handler.py:handle_request():141] handle_request: check_version
+2022-05-10 13:41:47,855 INFO    SenderThread:8887 [dir_watcher.py:__init__():169] watching files in: /opt/czl/self/attack/wandb/run-20220510_134146-shmlb7es/files
+2022-05-10 13:41:47,855 INFO    SenderThread:8887 [sender.py:_start_run_threads():815] run started: shmlb7es with start time 1652190106
+2022-05-10 13:41:47,855 DEBUG   SenderThread:8887 [sender.py:send():235] send: summary
+2022-05-10 13:41:47,855 INFO    SenderThread:8887 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-05-10 13:41:47,856 DEBUG   SenderThread:8887 [sender.py:send_request():249] send_request: check_version
+2022-05-10 13:41:48,070 DEBUG   HandlerThread:8887 [handler.py:handle_request():141] handle_request: run_start
+2022-05-10 13:41:48,860 INFO    Thread-7  :8887 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/czl/self/attack/wandb/run-20220510_134146-shmlb7es/files/wandb-summary.json
+2022-05-10 13:41:49,250 WARNING MainThread:8887 [internal.py:wandb_internal():155] Internal process interrupt: 1
+2022-05-10 13:41:49,259 DEBUG   HandlerThread:8887 [meta.py:__init__():37] meta init
+2022-05-10 13:41:49,259 DEBUG   HandlerThread:8887 [meta.py:__init__():51] meta init done
+2022-05-10 13:41:49,259 DEBUG   HandlerThread:8887 [meta.py:probe():211] probe
+2022-05-10 13:41:49,266 DEBUG   HandlerThread:8887 [git.py:repo():33] git repository is invalid
+2022-05-10 13:41:49,266 DEBUG   HandlerThread:8887 [meta.py:_save_pip():55] save pip
+2022-05-10 13:41:49,266 DEBUG   HandlerThread:8887 [meta.py:_save_pip():69] save pip done
+2022-05-10 13:41:49,266 DEBUG   HandlerThread:8887 [meta.py:_save_conda():76] save conda
+2022-05-10 13:41:49,863 INFO    Thread-7  :8887 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/czl/self/attack/wandb/run-20220510_134146-shmlb7es/files/requirements.txt
+2022-05-10 13:41:49,864 INFO    Thread-7  :8887 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/czl/self/attack/wandb/run-20220510_134146-shmlb7es/files/conda-environment.yaml
+2022-05-10 13:41:50,049 WARNING MainThread:8887 [internal.py:wandb_internal():155] Internal process interrupt: 2
+2022-05-10 13:41:50,050 ERROR   MainThread:8887 [internal.py:wandb_internal():158] Internal process interrupted.
+2022-05-10 13:41:50,069 INFO    SenderThread:8887 [sender.py:finish():1107] shutting down sender
+2022-05-10 13:41:50,069 INFO    SenderThread:8887 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-05-10 13:41:50,147 DEBUG   HandlerThread:8887 [meta.py:_save_conda():86] save conda done
+2022-05-10 13:41:50,148 DEBUG   HandlerThread:8887 [meta.py:probe():249] probe done
+2022-05-10 13:41:50,153 INFO    HandlerThread:8887 [handler.py:finish():790] shutting down handler
+2022-05-10 13:41:50,272 INFO    WriterThread:8887 [datastore.py:close():281] close: /opt/czl/self/attack/wandb/run-20220510_134146-shmlb7es/run-shmlb7es.wandb
+2022-05-10 13:41:50,808 INFO    MainThread:8887 [internal.py:handle_exit():82] Internal process exited
